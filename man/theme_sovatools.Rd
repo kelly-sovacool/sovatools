@@ -13,11 +13,9 @@ list of ggproto objects
 Uses \code{ggplot2::theme_bw()} and removes margins.
 }
 \examples{
-\dontrun{
 library(ggplot2)
 ggplot(mtcars) +
   aes(x = mpg, y = wt, color = cyl) +
   geom_point()  +
   theme_sovatools()
-}
 }
