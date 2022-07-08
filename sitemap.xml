@@ -16,6 +16,12 @@
     <loc>http://sovacool.dev/sovatools/index.html</loc>
   </url>
   <url>
+    <loc>http://sovacool.dev/sovatools/news/index.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/pull_request_template.html</loc>
+  </url>
+  <url>
     <loc>http://sovacool.dev/sovatools/reference/abort_packages_not_installed.html</loc>
   </url>
   <url>
