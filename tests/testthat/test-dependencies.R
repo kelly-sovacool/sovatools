@@ -6,7 +6,7 @@ test_that("abort_packages_not_installed works", {
     "The following package\\(s\\) are required for `testfun\\(\\)` but are not installed:"
   )
   expect_error(
-      abort_packages_not_installed('also-not-a-package'),
-      "The following package\\(s\\) are required"
+    abort_packages_not_installed("also-not-a-package"),
+    "The following package\\(s\\) are required"
   )
 })
