@@ -5,13 +5,18 @@
 #' This is only intended to be used inside a function. It will error otherwise.
 #'
 #' Adapted from [mikropml](abort_packages_not_installed)
+#'
+#' @param ... Package name(s) to check
 #' @export
 #' @author Kelly Sovacool \email{sovacool@@umich.edu}
 #'
 #' @examples
-#' abort_packages_not_installed("base")
 #' \dontrun{
-#' abort_packages_not_installed("not-a-package-name", "caret", "dplyr", "non_package")
+#' your_function <- function() {
+#'   abort_packages_not_installed("base")
+#'   abort_packages_not_installed("not-a-package-name", "dplyr", "non_package")
+#' }
+#' your_function()
 #' }
 abort_packages_not_installed <- function(...) {
   package_status <- sapply(c(...), requireNamespace, quietly = TRUE)
@@ -47,6 +52,6 @@ get_deps_tbl <- function(package) {
         Package = names(all_deps),
         data = purrr::map(all_deps, dplyr::as_tibble)
     ) %>%
-        tidyr::unnest(data)
+        tidyr::unnest(.data[["data"]])
     return(deps_tbl)
 }
