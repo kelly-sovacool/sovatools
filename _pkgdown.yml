@@ -1,0 +1,5 @@
+url: http://sovacool.dev/sovatools/
+template:
+  bootstrap: 5
+development:
+  mode: auto
