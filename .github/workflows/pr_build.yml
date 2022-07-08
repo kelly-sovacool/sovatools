@@ -40,26 +40,7 @@ jobs:
           git commit \
           --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
           -m '🎨 Style R code' || echo "No changes to commit"
-      - name: Render README
-        run: |
-          Rscript -e 'devtools::build_readme()'
-          git add README.md
-          git commit \
-          --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
-          -m '📄 Render README.Rmd' || echo "No changes to commit"
       - name: Push
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
-      - name: Docs
-        run: |
-          Rscript -e "pkgdown::build_reference(); devtools::build_site()"
-          git add docs
-          git commit \
-          --author="github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
-          -m "📑 Build docs site" || echo "No changes to commit"
-      - name: Push final
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
