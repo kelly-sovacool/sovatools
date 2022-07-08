@@ -1,8 +1,7 @@
 #' Throw an error if required packages are not installed.
 #'
-#' Reports which packages need to be installed and the parent function name.
+#' Reports which packages need to be installed.
 #' See \url{https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine}
-#' This is only intended to be used inside a function. It will error otherwise.
 #'
 #' Adapted from [mikropml](abort_packages_not_installed)
 #'
@@ -11,24 +10,31 @@
 #' @author Kelly Sovacool \email{sovacool@@umich.edu}
 #'
 #' @examples
+#' abort_packages_not_installed("base")
 #' \dontrun{
 #' your_function <- function() {
-#'   abort_packages_not_installed("base")
 #'   abort_packages_not_installed("not-a-package-name", "dplyr", "non_package")
 #' }
 #' your_function()
 #' }
 abort_packages_not_installed <- function(...) {
   package_status <- sapply(c(...), requireNamespace, quietly = TRUE)
-  parent_fcn_name <- sub("\\(.*$", "\\(\\)", deparse(sys.calls()[[sys.nframe() - 1]]))
+  if (!is.null(sys.calls()) & sys.nframe() > 1) { # called from another function
+      parent_fcn_name <- paste0("for `",
+                                sub("\\(.*$", "\\(\\)", deparse(sys.calls()[[sys.nframe() - 1]])),
+                                "` ")
+  } else { # not called from another function
+      parent_fcn_name = ""
+  }
   packages_not_installed <- Filter(isFALSE, package_status)
   if (length(packages_not_installed) > 0) {
-    msg <- paste0(
-      "The following package(s) are required for `", parent_fcn_name,
-      "` but are not installed: \n  ",
-      paste0(names(packages_not_installed), collapse = ", ")
-    )
-    stop(msg)
+      msg <- paste0(
+          "The following package(s) are required ",
+          parent_fcn_name,
+          "but are not installed: \n  ",
+          paste0(names(packages_not_installed), collapse = ", ")
+      )
+      stop(msg)
   }
 }
 
