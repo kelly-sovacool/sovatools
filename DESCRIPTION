@@ -21,6 +21,7 @@ Imports:
     rlang,
     tools
 Suggests:
+    covr,
     ggplot2,
     knitr,
     purrr,
