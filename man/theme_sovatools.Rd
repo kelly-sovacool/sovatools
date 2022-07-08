@@ -16,6 +16,6 @@ Uses \code{ggplot2::theme_bw()} and removes margins.
 library(ggplot2)
 ggplot(mtcars) +
   aes(x = mpg, y = wt, color = cyl) +
-  geom_point()  +
+  geom_point() +
   theme_sovatools()
 }
