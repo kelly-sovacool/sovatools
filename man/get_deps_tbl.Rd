@@ -17,6 +17,6 @@ Get package dependencies as a tibble
 }
 \examples{
 \dontrun{
-  get_deps_tbl('mikropml')
+get_deps_tbl("mikropml")
 }
 }
