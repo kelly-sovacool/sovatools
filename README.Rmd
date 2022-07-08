@@ -7,6 +7,7 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
+  echo = FALSE,
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "100%"
@@ -16,9 +17,18 @@ knitr::opts_chunk$set(
 # sovatools
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/kelly-sovacool/sovatools/workflows/R-CMD-check/badge.svg)](https://github.com/kelly-sovacool/sovatools/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-TODO
+Sovacool's Tools
+
+```{r desc, results = 'asis', message = FALSE, warning = FALSE}
+library(dplyr)
+cat(stringr::str_replace_all(utils::packageDescription('sovatools')['Description'],
+                             '\n', ' '))
+```
+
 
 ## Installation
 
