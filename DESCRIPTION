@@ -11,10 +11,10 @@ Authors@R:
     )
 Description: A collection of useful functions and example code that doesn't
     have an obvious home anywhere else. See the website 
-    <https://sovacool.dev/sovatools>
+    <https://sovacool.dev/sovatools/>
     for more information, documentation, and examples.
-URL: https://github.com/kelly-sovacool/sovatools,
-    http://sovacool.dev/sovatools/
+URL: https://github.com/kelly-sovacool/sovatools/,
+    https://sovacool.dev/sovatools/
 BugReports: https://github.com/kelly-sovacool/sovatools/issues
 Imports:
     dplyr,
@@ -29,8 +29,6 @@ Suggests:
     testthat (>= 3.0.0),
     tidyr,
     utils
-VignetteBuilder:
-    knitr
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
