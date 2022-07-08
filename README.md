@@ -10,12 +10,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-Sovacool’s Tools
-
-A collection of useful functions and example code that doesn’t have an
-obvious home anywhere else. See the website
-<https://sovacool.dev/sovatools> for more information, documentation,
-and examples.
+NA
 
 ## Installation
 

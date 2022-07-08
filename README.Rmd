@@ -21,8 +21,6 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-Sovacool's Tools
-
 ```{r desc, results = 'asis', message = FALSE, warning = FALSE}
 library(dplyr)
 cat(stringr::str_replace_all(utils::packageDescription('sovatools')['Description'],
