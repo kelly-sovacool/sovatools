@@ -6,11 +6,13 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library(ggplot2)
 #' ggplot(mtcars) +
 #'   aes(x = mpg, y = wt, color = cyl) +
 #'   geom_point()  +
 #'   theme_sovatools()
+#' }
 theme_sovatools <- function() {
     abort_packages_not_installed('ggplot2')
     return(list(
