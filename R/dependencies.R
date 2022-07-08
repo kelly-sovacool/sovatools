@@ -46,7 +46,9 @@ abort_packages_not_installed <- function(...) {
 #' @export
 #'
 #' @examples
-#' get_deps_tbl('mikropml')
+#' \dontrun{
+#'   get_deps_tbl('mikropml')
+#' }
 get_deps_tbl <- function(package) {
     abort_packages_not_installed(c('purrr', 'tidyr'))
     # https://stackoverflow.com/questions/14645363/listing-r-package-dependencies-without-installing-packages

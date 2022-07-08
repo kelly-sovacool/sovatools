@@ -16,5 +16,7 @@ a tibble with the package's recursive dependencies
 Get package dependencies as a tibble
 }
 \examples{
-get_deps_tbl('mikropml')
+\dontrun{
+  get_deps_tbl('mikropml')
+}
 }
