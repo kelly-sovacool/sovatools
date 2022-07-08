@@ -1,11 +1,34 @@
 Package: sovatools
-Title: What the Package Does (One Line, Title Case)
+Title: Sovacool's Tools
 Version: 0.0.0.9000
+Date: 2022-07-07
 Authors@R: 
-    person("Kelly", "Sovacool", , "sovacool@umich.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-3283-829X"))
-Description: What the package does (one paragraph).
+    person(given = "Kelly",
+           family = "Sovacool",
+           role = c("aut", "cre"),
+           email = "sovacool@umich.edu",
+           comment = c(ORCID = "0000-0003-3283-829X")
+    )
+Description: A collection of useful functions and example code that doesn't
+    have an obvious home anywhere else. See the website 
+    <https://sovacool.dev/sovatools>
+    for more information, documentation, and examples.
+URL: https://github.com/kelly-sovacool/sovatools,
+    http://sovacool.dev/sovatools/
+BugReports: https://github.com/kelly-sovacool/sovatools/issues
+Imports:
+    dplyr,
+    tools
+Suggests:
+    knitr,
+    purrr,
+    rmarkdown,
+    testthat,
+    tidyr
+VignetteBuilder:
+    knitr
 License: MIT + file LICENSE
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
