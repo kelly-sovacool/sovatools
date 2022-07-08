@@ -6,6 +6,9 @@
 \usage{
 abort_packages_not_installed(...)
 }
+\arguments{
+\item{...}{Package name(s) to check}
+}
 \description{
 Reports which packages need to be installed and the parent function name.
 See \url{https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine}
@@ -15,9 +18,12 @@ This is only intended to be used inside a function. It will error otherwise.
 Adapted from \href{abort_packages_not_installed}{mikropml}
 }
 \examples{
-abort_packages_not_installed("base")
 \dontrun{
-abort_packages_not_installed("not-a-package-name", "caret", "dplyr", "non_package")
+your_function <- function() {
+  abort_packages_not_installed("base")
+  abort_packages_not_installed("not-a-package-name", "dplyr", "non_package")
+}
+your_function()
 }
 }
 \author{
