@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://sovacool.dev/sovatools/404.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/authors.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/index.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/abort_packages_not_installed.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/get_deps_tbl.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/reexports.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/sovatools-package.html</loc>
+  </url>
+  <url>
+    <loc>http://sovacool.dev/sovatools/reference/theme_sovatools.html</loc>
+  </url>
+</urlset>
