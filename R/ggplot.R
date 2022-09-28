@@ -1,4 +1,4 @@
-#' sovatools theme for ggplot
+#' Kelly's go-to theme for ggplot2
 #'
 #' Uses `ggplot2::theme_bw()` and removes margins.
 #'
@@ -11,8 +11,8 @@
 #' ggplot(mtcars) +
 #'   aes(x = mpg, y = wt, color = cyl) +
 #'   geom_point() +
-#'   theme_sovatools()
-theme_sovatools <- function() {
+#'   theme_sovacool()
+theme_sovacool <- function() {
   abort_packages_not_installed("ggplot2")
   return(list(
     ggplot2::theme_bw(),
