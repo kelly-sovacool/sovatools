@@ -6,7 +6,7 @@
 \alias{sovatools-package}
 \title{sovatools: Sovacool's Tools}
 \description{
-A collection of useful functions and example code that don't have an obvious home anywhere else. See the website \url{https://sovacool.dev/sovatools/} for more information, documentation, and examples.
+A collection of useful functions and examples that don't have an obvious home anywhere else. See the website \url{https://sovacool.dev/sovatools/} for more information, documentation, and examples.
 }
 \seealso{
 Useful links:
