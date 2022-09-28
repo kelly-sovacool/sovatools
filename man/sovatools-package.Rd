@@ -6,13 +6,13 @@
 \alias{sovatools-package}
 \title{sovatools: Sovacool's Tools}
 \description{
-A collection of useful functions and example code that doesn't have an obvious home anywhere else. See the website \url{https://sovacool.dev/sovatools} for more information, documentation, and examples.
+A collection of useful functions and examples that don't have an obvious home anywhere else. See the website \url{https://sovacool.dev/sovatools/} for more information, documentation, and examples.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/kelly-sovacool/sovatools}
-  \item \url{http://sovacool.dev/sovatools/}
+  \item \url{https://github.com/kelly-sovacool/sovatools/}
+  \item \url{https://sovacool.dev/sovatools/}
   \item Report bugs at \url{https://github.com/kelly-sovacool/sovatools/issues}
 }
 
