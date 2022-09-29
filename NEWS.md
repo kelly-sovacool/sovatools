@@ -1,4 +1,4 @@
-# sovatools development veersion
+# sovatools development version
 
 - Added a `NEWS.md` file to track changes to the package.
 - New functions:
