@@ -18,6 +18,7 @@ URL: https://github.com/kelly-sovacool/sovatools/,
 BugReports: https://github.com/kelly-sovacool/sovatools/issues
 Imports:
     dplyr,
+    magick,
     rlang,
     tools
 Suggests:
