@@ -6,5 +6,5 @@ get_image_dims <- function(image_path, width_inches = 6.5) {
     height_in <- get_height_inches(img_info$width, img_info$height,
                                    width_inches = width_inches) %>%
         round(.,1)
-    return(glue('("{image_path}"){{width="{width_inches}in" height="{height_in}in"}}'))
+    return(glue::glue('("{image_path}"){{width="{width_inches}in" height="{height_in}in"}}'))
 }
