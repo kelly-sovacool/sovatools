@@ -19,6 +19,7 @@ BugReports: https://github.com/kelly-sovacool/sovatools/issues
 Imports:
     dplyr,
     glue,
+    here,
     magick,
     rlang,
     stringr,
